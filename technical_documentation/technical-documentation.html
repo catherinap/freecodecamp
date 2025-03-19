@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Documentation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav id="navbar">
+        <header>CSS Documentation</header>
+        <ul>
+          <li><a class="nav-link" href="#css_introduction">CSS Introduction</a></li>
+          <li><a class="nav-link" href="#css_syntax">CSS Syntax</a></li>
+          <li><a class="nav-link" href="#css_selectors">CSS Selectors</a></li>
+          <li><a class="nav-link" href="#how_to_add_css">How To Add CSS</a></li>
+          <li><a class="nav-link" href="#css_comments">CSS Comments</a></li>
+        </ul>
+      </nav>
+    <main id="main-doc">
+      <section class="main-section" id="css_introduction">
+        <header>CSS Introduction</header>
+        <article>
+          <p>CSS is the language we use to style a Web page.</p>
+          <h3>What is CSS?</h3>
+          <p>This guide assumes you have the following basic background:</p>
+          <ul>
+            <li>CSS stands for Cascading Style Sheets</li>
+            <li>CSS describes how HTML elements are to be displayed on screen, paper, or in other media</li>
+            <li>CSS saves a lot of work. It can control the layout of multiple web pages all at once</li>
+            <li>External stylesheets are stored in CSS files</li>
+          </ul>
+        </article>
+          <h3>Why Use CSS?</h3>
+           <p>CSS is used to define styles for your web pages, including the design, layout and variations in display for different devices and screen sizes.</p>
+           <p>CSS Example</p>
+           <code>body {
+  background-color: lightblue;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+p {
+  font-family: verdana;
+  font-size: 20px;
+}</code>
+<h3>CSS Solved a Big Problem</h3>
+<p>HTML was NEVER intended to contain tags for formatting a web page!</p>
+<p>HTML was created to describe the content of a web page, like:</p>
+<p>&lt;h1&gt;This is a heading&lt;/h1&gt;</p>
+<p>&lt;p&gt;This is a paragraph.&lt;/p&gt;</p>
+<p>To solve this problem, the World Wide Web Consortium (W3C) created CSS.</p>
+      </section>
+      <section class="main-section" id="css_syntax">
+        <header>CSS Syntax</header>
+        <article>
+          <p>A CSS rule consists of a selector and a declaration block.</p>
+          <h3>CSS Syntax</h3>
+          <img src="https://www.w3schools.com/css/img_selector.gif" alt="Stickman">
+          <p>The selector points to the HTML element you want to style.</p>
+          <p>The declaration block contains one or more declarations separated by semicolons.</p>
+          <p>Each declaration includes a CSS property name and a value, separated by a colon.</p>
+          <p>Multiple CSS declarations are separated with semicolons, and declaration blocks are surrounded by curly braces.</p>
+        </article>
+        <p>CSS Example</p>
+           <p>In this example all &lt;p&gt; elements will be center-aligned, with a red text color:</p>
+          <code><span class="red">p</span> {
+  <span class="red">color</span>: red;
+  text-align: center;
+}</code>
+<p>CSS Example</p>
+<ul>
+  <li><span class="red">p</span> is a selector in CSS (it points to the HTML element you want to style: &lt;p&gt;).</li>
+  <li><span class="red">color</span> is a property, and <span class="red">red</span> is the property value</li>
+  <li><span class="red">text-align</span> is a property, and <span class="red">center</span> is the property value</li>
+</ul>
+      </section>
+      <section class="main-section" id="css_selectors">
+        <header>CSS Selectors</header>
+        <article>
+          <p>A CSS selector selects the HTML element(s) you want to style.</p>
+          <h3>CSS Selectors</h3>
+          <p>CSS selectors are used to "find" (or select) the HTML elements you want to style.</p>
+          <p>We can divide CSS selectors into five categories:</p>
+<ul>
+  <li>Simple selectors (select elements based on name, id, class)</li>
+  <li>Combinator selectors (select elements based on a specific relationship between them)</li>
+  <li>Pseudo-class selectors (select elements based on a certain state)</li>
+  <li>Pseudo-elements selectors (select and style a part of an element)</li>
+  <li>Attribute selectors (select elements based on an attribute or attribute value)</li>
+</ul>
+<p>This page will explain the most basic CSS selectors.</p>
+<h3>The CSS element Selector</h3>
+<p>The element selector selects HTML elements based on the element name.</p>
+        </article>
+        <p>Example</p>
+ <p>In this example all &lt;p&gt; elements will be center-aligned, with a red text color:</p>
+           <code><span class="red">p</span> {
+  <span class="red">text-align</span>: center;
+  color: red;
+}</code>
+        </article>
+      </section>
+      <section class="main-section" id="how_to_add_css">
+        <header>How To Add CSS</header>
+        <article>
+          <p>When a browser reads a style sheet, it will format the HTML document according to the information in the style sheet.</p>
+          <h3>Three Ways to Insert CSS</h3>
+          <ul>
+            <li>External CSS</li>
+            <li>Internal CSS</li>
+            <li>Inline CSS</li>
+          </ul>
+      </section>
+      <section class="main-section" id="css_comments">
+        <header>CSS Comments</header>
+        <article>
+          <p>CSS comments are not displayed in the browser, but they can help document your source code.</p>
+          <h3>CSS Comments</h3>
+          <p>Comments are used to explain the code, and may help when you edit the source code at a later date.</p>
+          <p>Comments are ignored by browsers.</p>
+        </article>
+        <p>A CSS comment is placed inside the <span class="red">&lt;style&gt;</span> element, and starts with <span class="red">/*</span> and ends with <span class="red">*/</span>:</p>
+          <p>Example</p>
+           <code><span class="grey">/* This is a single-line comment */</span>
+p {
+  color: red;
+}</code>
+<p>You can add comments wherever you want in the code:</p>
+<p>Example</p>
+           <code>p {
+  color: red;  <span class="grey">/* Set text color to red */</span>
+}</code>
+<p>Even in the middle of a code line:</p>
+<p>Example</p>
+<code>p {
+  color: <span class="grey">/* Red */</span>blue; 
+}</code>
+      </section>
+    </main>
+</body>
+</html>
